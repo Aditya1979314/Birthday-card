@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.mg-bottom{
+margin-bottom: 24px;
+}
+.container{
+    position: absolute;
+    width: 177px;
+    top: 33%;
+    left: 44%;
+}
+.card{
+    color:white;
+    padding-top: 155px;
+    background:url(aditi.jpeg);
+    background-size: cover;
+    border-radius: 0.5em;
+    transition: transform 500ms ease;
+    overflow: hidden;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.heading{
+    color: rgba(255,255,255,0.9);
+    position: relative;
+}
+.heading::after{
+    content:" ";
+    position: absolute;
+    left: -9px;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background: #37b24d;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+.card:hover .heading::after{
+    transform: scaleX(1);
+}
+.card-content p{
+    color: rgba(255,255,255 ,0.9);
+}
+.card-content{
+    padding:0 10px 1.5em;
+    background-color:linear-gradient(
+  rgba(0, 0, 0, 0.2) ,rgba(0, 0, 0, 0.5) 
+  );
+  transform: translateY(65%);
+  transition: transform 500ms linear;
+}
+.card:hover .card-content{
+    transform: translateY(0);
+}
+.button{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: #37b24d;
+    padding: 6px 12px;
+    border-radius: 0.5em;
+}
+.button:hover{
+    background-color:#40c057 ;
+}
